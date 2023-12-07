@@ -3,7 +3,10 @@ import random
 
 LETTER = string.ascii_letters
 NUMBER = string.digits
+# ký tự đặc biệt
 PUNCTUATION = string.punctuation
+
+# nhập số lượng ký tự trong password
 def get_password_lenght():
     while True:
         try: 
@@ -12,8 +15,7 @@ def get_password_lenght():
         except ValueError:
             print("The value you entered is not the number,please re-enter!!!")
         
-    
-        
+# khởi tạo ngẫu nhiên password
 def password_generator(length):
     printable = f'{LETTER}{NUMBER}{PUNCTUATION}'
     printable = list(LETTER)
